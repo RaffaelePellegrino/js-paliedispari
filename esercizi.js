@@ -1,4 +1,8 @@
-const parola=prompt("inserire una parola").toLowerCase();
+let parola=prompt("inserire una parola").toLowerCase();
+
+while(parola.length < 2 || !isNaN(parola)){
+    parola=prompt("inserire una parola").toLowerCase();
+}
 
 function palidroma(elemento){
     let checker = ''
